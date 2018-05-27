@@ -213,7 +213,7 @@ func main() {
 // It creates a default node based on the command line arguments and runs it in
 // blocking mode, waiting for it to be shut down.
 func geth(ctx *cli.Context) error {
-	initCustomGenesis(ctx)  // 初始化自定义创世块
+	// initCustomGenesis(ctx)  // 初始化自定义创世块
 	node := makeFullNode(ctx)
 	startNode(ctx, node)
 	node.Wait()
