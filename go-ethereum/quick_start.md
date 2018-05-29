@@ -1,11 +1,11 @@
 # 使用文档
 ## 安装geth
-git clone https://github.com/bananafund/AFToken
-cd AFToken/go-ethereum && make geth
+git clone https://github.com/bananafund/AFToken <br>
+cd AFToken/go-ethereum && make geth <br>
 并将geth所在路径加到PATH环境变量中。
 ## 准备geth运行环境
-export GETH_HOME=/Users/work/Documents/geth
-mkdir -p ${GETH_HOME}/data
+export GETH_HOME=/Users/work/Documents/geth <br>
+mkdir -p ${GETH_HOME}/data <br>
 将源码中的genesis.json以及编译生成的geth文件拷贝到GETH_HOME目录。
 ## 初始化创世快
 cd ${GETH_HOME} && geth --datadir ${GETH_HOME}/data init genesis.json
