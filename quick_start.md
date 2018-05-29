@@ -1,5 +1,5 @@
 # 使用文档
-## 安装geth
+## 安装aft
 git clone https://github.com/bananafund/AFToken <br>
 cd AFToken <br>
 ### MAC/Linux下执行命令：
