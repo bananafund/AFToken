@@ -1,9 +1,27 @@
 # 使用文档
-## 安装aft
-git clone https://github.com/bananafund/AFToken <br>
-cd AFToken <br>
-### MAC/Linux下执行命令：
-make all
+## ubuntu下安装go 1.10环境
+adduser work <br>
+cd /home/work <br>
+wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz <br>
+tar -zxvf go1.10.3.linux-amd64.tar.gz <br>
+mv go goroot <br>
+mkdir -p /home/work/go <br>
+打开~/.bashrc，在结尾添加以下内容：<br>
+export GOROOT=/home/work/goroot <br>
+export PATH=$GOROOT/bin:$PATH <br>
+export GOPATH=/home/work/go <br>
+export PATH=/home/work/go/src/github.com/bananafund/AFToken/build/bin:$PATH <br>
+source ~/.bashrc <br>
+
+## ubuntu下安装aft
+cd /home/work/go <br>
+go get -u github.com/bananafund/AFToken <br>
+cd /home/work/go/src/github.com/bananafund/AFToken <br>
+make all <br>
+打开~/.bashrc，在结尾添加以下内容：<br>
+export PATH=/home/work/go/src/github.com/bananafund/AFToken/build/bin:$PATH <br>
+source ~/.bashrc <br>
+
 ### Windows下执行命令：
 go install -v ./cmd/...
 ### 将aft所在路径加到PATH环境变量中。
