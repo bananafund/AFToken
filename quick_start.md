@@ -34,7 +34,7 @@ mkdir -p ${AFT_HOME}/data <br>
 ## 初始化创世快
 cd ${AFT_HOME} && aft --datadir ${aft_HOME}/data init genesis.json
 ## 启动aft客户端
-nohup aft --datadir ${AFT_HOME}/data --syncmode "full" --networkid 1108785740937 --identity "aft1" --rpc --rpcaddr "0.0.0.0" --rpccorsdomain "*" --rpcapi "web3,admin,eth,txpool,miner,personal" -bootnodes "enode://184276db387c64eb2bfec864ac3762cafad5d4187a0c1c7d1cfc1639fdd9926c20c7c999a6131002902f4ee6b6b48018ee9095d99de401350de21bf7ad00822d@47.101.36.51:30303" &
+nohup aft --datadir ${AFT_HOME}/data --syncmode "full" --networkid 1108785740939 --identity "aft1" --rpc --rpcaddr "0.0.0.0" --rpccorsdomain "*" --rpcapi "web3,admin,eth,txpool,miner,personal" -bootnodes "enode://184276db387c64eb2bfec864ac3762cafad5d4187a0c1c7d1cfc1639fdd9926c20c7c999a6131002902f4ee6b6b48018ee9095d99de401350de21bf7ad00822d@47.101.36.51:30303" &
 ## 连接本地节点，进入web3 console终端
 aft attach http://127.0.0.1:8545
 ## 新建账号，密码是123456
